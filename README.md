@@ -26,7 +26,7 @@ int main()
 
 {
 
-int fd[2],child; char a[10];
+int fd[2],child; char a[20];
 
 printf("\n Enter the string:");
 
@@ -42,7 +42,7 @@ if(!child)
 
 close(fd[0]);
 
-wri`te(fd[1],a,5); wait(0);
+write(fd[1],a,5); wait(0);
 
 }
 
@@ -59,9 +59,11 @@ read(fd[0],a,5); printf("The string received from pipe is: %s",a);
 return 0;
 
 }
+
 ```
 ## OUTPUT:
-![Screenshot (120)](https://github.com/JAYAVARTHAN-P/OS-EX.6-IMPLEMENTATION-OF-INTER-PROCESS-COMMUNICATION-USING-PIPE/assets/121369281/e3d3194f-b4d7-401f-9700-5b86c7866b46)
+
+![Screenshot (121)](https://github.com/JAYAVARTHAN-P/OS-EX.6-IMPLEMENTATION-OF-INTER-PROCESS-COMMUNICATION-USING-PIPE/assets/121369281/55ca7ffc-e720-4a0f-b756-dda1066c1e6c)
 
 
 ## RESULT: 
